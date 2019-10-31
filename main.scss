@@ -1,0 +1,254 @@
+@import '../bootstrap/scss/bootstrap.scss';
+@import 'sass/scss/fontawesome.scss';
+@import 'sass/scss/solid.scss';
+@import 'sass/scss/brands.scss';
+$fa-font-path: 'webfonts';
+
+
+
+
+
+
+//Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple|Pontano+Sans|Francois+One&display=swap);
+
+
+$main-font: 'Francois One',
+sans-serif;
+$script-font: 'Homemade Apple',
+cursive;
+$p-font: 'Pontano Sans',
+sans-serif;
+
+$light-blue: #D0FBFE;
+$teal-blue: #62E6F0;
+$background: white;
+
+body {
+  font-family: $main-font;
+  background: $background;
+  margin: 0;
+
+
+  #paris {
+    font-family: $script-font;
+    font-size: 4em;
+  }
+
+  .nav-link {
+    font-family: $main-font;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 30px;
+  }
+
+  .nav-link.active {
+    text-decoration: underline;
+    color: $teal-blue;
+  }
+
+
+
+  .current a {
+    text-decoration: underline;
+    color: $teal-blue;
+  }
+
+  .active a {
+    text-decoration: underline;
+    color: $teal-blue;
+  }
+
+  .current li {
+    text-decoration: underline;
+    color: $teal-blue;
+  }
+
+  .navbar {
+    margin: 20px;
+  }
+
+  .navbar.transparent.navbar-inverse .navbar-inner {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0, 0, 0, 0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop(0%, rgba(0, 0, 0, 0.00)), color-stop(100%, rgba(0, 0, 0, 0.00)));
+    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%);
+  }
+
+
+
+  .searchIcon i {
+    position: absolute;
+
+  }
+
+
+
+  .icon {
+    padding: 20px;
+    min-width: 40px;
+    opacity: 1;
+  }
+
+  .searchBar {
+    border-radius: 20px;
+    border: 1px solid $teal-blue;
+    margin: 10px;
+
+  }
+
+  input {
+    text-indent: 20px;
+  }
+
+}
+
+#background {
+  background-image: url('../Images/EiffelTower.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 500px;
+  max-width: 100%;
+  position: relative;
+
+}
+
+#sidebar {
+  width: 60px;
+  height: 1000px;
+
+  .socialMediaIcons {
+    position: absolute;
+    bottom: 550px;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+#text {
+  width: 40%;
+  text-align: left;
+  top: 350px;
+  background-color: white;
+
+}
+
+#text h2 {
+  background-color: white;
+  font-size: 1em;
+  margin: 10px;
+}
+
+#text h3 {
+  font-family: $script-font;
+  font-size: 2em;
+  display: inline;
+  color: black;
+  font-weight: 300;
+}
+
+#text p {
+  font-size: .8em;
+  font-family: $p-font;
+  font-weight: lighter;
+}
+
+hr {
+  width: 20%;
+  margin-left: 0;
+
+  border: 1px solid black;
+}
+
+#eiffel {
+  color: $teal-blue;
+  background-color: white;
+  font-size: 1em;
+}
+
+#article {
+  width: 70%;
+}
+
+
+
+.btn {
+  border-radius: 0px;
+  color: black;
+  font-family: $p-font;
+  letter-spacing: 2px;
+}
+
+
+
+#mapDiv {
+
+  margin-top: 50px;
+  display: flex;
+  position: absolute;
+  left: 0px;
+
+
+}
+
+#map {
+  width: 250px;
+
+}
+
+#coords p {
+  font-size: .7em;
+}
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  #background {
+    background-size: contain;
+
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  #text {
+    top: 0px;
+    background-color:transparent;
+  }
+
+  #text h2 {
+    background-color: transparent;
+  }
+
+  #text h3 {
+    font-size: 3em;
+  }
+
+  #eiffel {
+    color: $teal-blue;
+    background-color: transparent;
+  }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+  #background {
+    height: 800px;
+    background-size: 800px;
+    background-position: right;
+
+  }
+  
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
