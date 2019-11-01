@@ -1,0 +1,66 @@
+@import '../bootstrap/scss/bootstrap.scss';
+@import 'sass/scss/fontawesome.scss';
+@import 'sass/scss/solid.scss';
+@import 'sass/scss/brands.scss';
+@import 'variables.scss';
+@import 'main.scss';
+$fa-font-path: 'webfonts';
+
+#background {
+  background-image: url('../Images/louvre.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 500px;
+  max-width: 100%;
+  position: relative;
+  // border:1px solid black;
+
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  #background {
+    background-size: contain;
+
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  #text {
+    top: 0px;
+    background-color:transparent;
+  }
+
+  #text h2 {
+    background-color: transparent;
+  }
+
+  #text h3 {
+    font-size: 3em;
+  }
+
+  #eiffel {
+    color: $teal-blue;
+    background-color: transparent;
+  }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+  #background {
+    height: 800px;
+    background-size: 800px;
+    background-position: right;
+
+  }
+  
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
